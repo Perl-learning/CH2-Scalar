@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+$line = <STDIN>;
+
+if ($line eq "\n")
+{
+    print "just a line.\n";
+}
+else
+{
+    print "Input is : $line";
+}
