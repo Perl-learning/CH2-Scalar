@@ -1,0 +1,5 @@
+
+use feature 'say';
+
+say "123";
+say "456";

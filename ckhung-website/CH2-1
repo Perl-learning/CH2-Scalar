@@ -1,0 +1,30 @@
+#!/usr/bin/perl
+#use utf8;
+# 純量變數宣告
+
+use feature 'say';
+use strict;                 # 強制宣告
+my ($x, $y);
+$x = 13;
+$y = 5;
+say "\$x + \$y = ".($x+$y);
+
+# 純量陣列
+my(@arr, $sum, $tmp, $i);
+@arr = (13, 5, 1, 7);
+$sum = 0;
+foreach $tmp (@arr)
+{
+    $sum += $tmp;
+}
+say "The sum of array is : $sum";
+
+# for-loop 麻煩版
+$sum = 0;
+for ($i = 0; $i <= $#arr; $i++)    # $#arr 可以拿到最後一個index
+{
+    $sum += $arr[$i];
+}
+#my $str = "用for loop 得到 sum = $sum";
+my $str = "The sum adding by for-loop is : $sum";
+say $str;
