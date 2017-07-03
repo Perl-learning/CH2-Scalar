@@ -4,10 +4,10 @@ use warnings;
 use strict;
 use feature 'say';
 
-my($sum, $tmp, $argv_length, $count);
-$sum = 0;
-$argv_length = $#ARGV + 1;
-$count = 0;
+my($sum, $tmp, $argv_length, $count) = (0, 0, $#ARGV+1, 0);
+# $sum = 0;
+# $argv_length = $#ARGV + 1;
+# $count = 0;
 say "You'd input $argv_length command line args\n";
 foreach $tmp (@ARGV)
 {
