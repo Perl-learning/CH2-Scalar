@@ -1,10 +1,10 @@
 #!/usr/bin/perl
 
-$line = <STDIN>;
+$line = <STDIN>;                 # 讀入鍵盤輸入，以 Carriage Return 作結～
 
-if ($line eq "\n")
+if ($line eq "\n")               # STDIN 會自動加上 \n ，只有 \n 代表沒有特別輸入
 {
-    print "just a line.\n";
+    print "Nothing to print.\n";
 }
 else
 {
